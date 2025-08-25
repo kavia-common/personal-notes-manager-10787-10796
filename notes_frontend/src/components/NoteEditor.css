@@ -1,0 +1,42 @@
+.note-editor {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.no-active-note {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  color: var(--text-light-color);
+  font-size: 1.5rem;
+}
+
+.note-title-input,
+.note-content-textarea {
+  border: none;
+  padding: 1rem;
+  font-size: 1.2rem;
+  background-color: transparent;
+}
+
+.note-title-input:focus,
+.note-content-textarea:focus {
+  outline: none;
+}
+
+.note-title-input {
+  font-size: 2rem;
+  font-weight: bold;
+  color: var(--text-color);
+}
+
+.note-content-textarea {
+  flex-grow: 1;
+  font-family: inherit;
+  font-size: 1.1rem;
+  line-height: 1.6;
+  resize: none;
+  color: var(--secondary-color);
+}
